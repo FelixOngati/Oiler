@@ -1,0 +1,19 @@
+
+public class TriangularNumber {
+	public TriangularNumber(){};
+	public static int triangular(int limit){
+		int number=0;
+		int x =0;
+		do{
+			number += x;
+			for(int y = 1; y <= number; y++){
+				if( number % y == 0)
+					x++;
+			}
+			
+		}while(x<=limit);
+		
+		return number;
+	};
+
+}

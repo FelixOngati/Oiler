@@ -1,0 +1,30 @@
+
+public class TriangularNumber {
+	public TriangularNumber(){};
+	public static int triangular(int limit){
+		int number=0;
+		int x =0;
+		int n = 0;
+		do{
+			n++;
+			number += n;
+			for(int y = 1; y <= number; y++){
+				if( number % y == 0)
+					x++;
+			}
+			
+		}while(x<limit);
+		
+		return number;
+	};
+	
+	public static int factors(int number){
+		int count = 0;
+		for(int i = 1; i <= number; i++){
+			if(number % i == 0)
+				count++;
+		}
+		return count;
+	}
+
+}

@@ -1,0 +1,14 @@
+
+public class MultipleClasses {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TriangularNumber number = new TriangularNumber();
+		int result = number.triangular(7);
+		System.out.println(result);
+	}
+
+}

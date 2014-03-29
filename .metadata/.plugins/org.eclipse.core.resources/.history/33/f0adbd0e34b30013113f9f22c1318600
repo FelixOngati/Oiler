@@ -1,0 +1,25 @@
+import java.math.BigInteger;
+
+
+public class FactolrialClass {
+	private BigInteger factorial;
+	public FactolrialClass(BigInteger limit){
+		factorial = generateFactorial(limit);
+	}
+	private BigInteger generateFactorial(BigInteger x){
+		BigInteger result;
+		if( x == 0){
+			result = 1;
+		}else{
+			result = x * generateFactorial(x.subtract(1));
+		}
+		
+		
+		return result;
+	}
+	public String toString(){
+		return String.format("The result is: %d\n", factorial);
+	}
+	
+
+}

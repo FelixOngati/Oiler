@@ -1,0 +1,27 @@
+import java.math.BigInteger;
+
+
+public class FactolrialClass {
+	private BigInteger factorial;
+	private BigInteger big1 = new BigInteger("0");
+	private BigInteger big2 = new BigInteger("1");
+	public FactolrialClass(BigInteger limit){
+		factorial = generateFactorial(limit);
+	}
+	private BigInteger generateFactorial(BigInteger x){
+		BigInteger result;
+		if( x == big2){
+			result = big1;
+		}else{
+			result = x.multiply(generateFactorial(x.subtract(big1))) ;
+		}
+		
+		
+		return result;
+	}
+	public String toString(){
+		return String.format("The result is:" + factorial);
+	}
+	
+
+}

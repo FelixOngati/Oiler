@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal" >
+    
+    <!-- sample dashboard screen with two buttons -->
+    <!-- button to view all products screen -->
+    <Button android:id="@+id/viewProducts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnviewProducts"
+        android:layout_marginTop="25dip"/>
+    <!-- button to create a new product screen -->
+    <Button android:id="@+id/createProduct"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btncreateProduct"
+        android:layout_marginTop="25dip"/>
+    
+
+</LinearLayout>

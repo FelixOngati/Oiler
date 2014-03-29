@@ -1,0 +1,12 @@
+
+public class TriangularNumber {
+	public TriangularNumber(){};
+	public static int triangular(int limit){
+		int number=0;
+		for(int x = 1; x <= limit; ++x){
+			number += x;			
+		}
+		return number;
+	};
+
+}

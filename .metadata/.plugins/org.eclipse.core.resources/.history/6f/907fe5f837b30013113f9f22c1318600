@@ -1,0 +1,12 @@
+import java.math.*;
+public class Main {
+
+
+	public static void main(String[] args) {
+		BigInteger big = new BigInteger("7");
+		FactolrialClass object = new FactolrialClass(big);
+		System.out.printf("%s", object);
+
+	}
+
+}

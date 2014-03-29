@@ -1,0 +1,9 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+
+public class FactolrialClass {
+	Scanner input = new Scanner(System.in);
+	System.out.print("Enter a number: ");
+	
+}

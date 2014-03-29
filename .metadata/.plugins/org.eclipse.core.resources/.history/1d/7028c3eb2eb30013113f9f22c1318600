@@ -1,0 +1,21 @@
+import java.math.BigInteger;
+import java.math.*;
+
+
+public class FactolrialClass {
+	public FactolrialClass(int limit){
+		generateFactorial(limit);
+	}
+	private BigInteger generateFactorial(int x){
+		BigInteger result;
+		if( x == 0){
+			result = 1;
+		}else{
+			result = x * generateFactorial(x-1);
+		}
+		
+		
+		return result;
+	}
+
+}
