@@ -1,0 +1,12 @@
+import java.math.BigInteger;
+
+
+public class Main {
+	FibonacciOiler object = new FibonacciOiler();
+	
+	public static void main(String[] args) {
+	     int h = object.fibonacciCalcultor(10);
+
+	}	
+
+}

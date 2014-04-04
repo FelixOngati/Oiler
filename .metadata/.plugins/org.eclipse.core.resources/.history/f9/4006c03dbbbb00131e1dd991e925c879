@@ -1,0 +1,18 @@
+import java.math.BigInteger;
+import java.math.*;
+public class BigIntegers {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		float strtym = System.nanoTime();
+		BigInteger r = new BigInteger("100");
+		BigInteger b2 = r.pow(1000);
+		float endtym = System.nanoTime();
+		System.out.printf("%.5f\n",endtym-strtym);
+		System.out.println(b2);
+
+	}
+
+}

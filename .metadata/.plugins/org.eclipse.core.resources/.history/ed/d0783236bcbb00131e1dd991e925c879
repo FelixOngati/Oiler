@@ -1,0 +1,27 @@
+import java.math.BigInteger;
+import java.math.*;
+public class BigIntegers {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		float strtym = System.nanoTime();
+		BigInteger r = new BigInteger("0");
+		BigInteger t = new BigInteger("0");
+		for(int x = 2; x <= 5; x++){
+			r = r .add(new BigInteger(1 + ""));
+			//System.out.println(r);
+			for(int y = 2; y <= 5; y++){
+				t = r.pow(y);
+				System.out.printf("%s\t",t);
+			}
+		}
+		//BigInteger b2 = r.pow(1000);
+		//float endtym = System.nanoTime();
+		//System.out.printf("%.5f\n",endtym-strtym);
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+import java.math.BigInteger;
+import java.util.ArrayList;
+//import java.math.*;
+public class BigIntegers {
+	
+	public static void main(String[] args) {	
+		BigInteger r;
+		BigInteger t = new BigInteger("0");
+		ArrayList powers = new ArrayList();
+		
+		for(int x = 2; x <= 5; x++){
+			r = new BigInteger(x + "");
+			for(int y = 2; y <= 5; y++){
+				t = r.pow(y);
+				powers.add(t);
+			}
+		}
+		System.out.println(powers);
+		
+	}//end main
+
+}//end class BigIntegers

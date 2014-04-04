@@ -1,0 +1,30 @@
+
+public class SummationOfPrimes {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long x = 0;
+		for(int i=2; i<1000000; i++){
+			boolean isPrimeNumber = true;
+			//check to see if the number is prime
+			for(int j=2; j<i; j++){
+				if(i % j == 0){
+					isPrimeNumber = false;
+					break;//exit the inner for loop					
+				}
+			}
+			//print the number if prime
+			if(isPrimeNumber){
+				x += i;
+				System.out.print(i + " ");
+			}			
+		}
+		System.out.println();
+		System.out.println(x);
+
+	}
+
+}

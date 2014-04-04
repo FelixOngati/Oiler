@@ -1,0 +1,21 @@
+
+public class FibonacciOiler {
+	int t1 = 1;
+	int t2 = 1;
+	int def = 1;
+	int x = 3;
+	int display;
+	
+	public int fibonacciCalcultor(int limit){
+		while(x <= limit){
+				display = t1 + t2;
+				t1 = t2;
+				t2 = display;
+				x++;
+				
+			}
+		return display;
+	}
+	
+
+}

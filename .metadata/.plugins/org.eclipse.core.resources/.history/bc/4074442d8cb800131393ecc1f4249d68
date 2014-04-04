@@ -1,0 +1,13 @@
+//import java.math.BigInteger;
+
+
+public class Main {
+	static FibonacciOiler object = new FibonacciOiler();
+	
+	public static void main(String[] args) {
+	     int h = object.fibonacciCalcultor(100);
+	     System.out.printf("%d", h);
+
+	}	
+
+}

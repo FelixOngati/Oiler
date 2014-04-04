@@ -1,0 +1,32 @@
+import java.math.BigInteger;
+
+
+public class Main {
+	
+	int t1 = 1;
+	int t2 = 1;
+	int def = 1;
+	int x = 0;
+	int y = 2;
+	String string;
+	int display;
+	
+	public static void main(String[] args) {
+				
+
+	}
+	
+	public void fibonacciCalcultor(int limit){		
+		while(x < limit){
+			    y++;
+				display = t1 + t2;
+				t1 = t2;
+				t2 = display;
+				BigInteger result = new BigInteger(display + "");
+				string = result.toString();
+				x = string.length();				
+			}
+		System.out.printf("%d", y);			
+	}		
+
+}

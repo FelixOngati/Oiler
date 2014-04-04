@@ -1,0 +1,26 @@
+import java.math.BigInteger;
+
+public class FibonacciOiler {
+	int t1 = 1;
+	int t2 = 1;
+	int def = 1;
+	int x = 0;
+	int y = 0;
+	private String string;
+	int display;
+	
+	public int fibonacciCalcultor(int limit){		
+		while(x < limit){
+			    y++;
+				display = t1 + t2;
+				t1 = t2;
+				t2 = display;
+				BigInteger result = new BigInteger(display + "");
+				string = result.toString();
+				x = string.length();				
+			}
+		return y;
+	}
+	
+
+}

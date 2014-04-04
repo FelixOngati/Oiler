@@ -1,0 +1,25 @@
+
+public class TriangularNumber {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x = 0;
+		int y = 0;
+		int i=0;
+		while(i<10){
+			++y;
+			x = x + y;			
+			for(int j=0;j<=x; j++){
+				if(x % j == 0){
+					i++;
+				}
+			}
+		}
+		System.out.print(x);
+
+	}
+
+}

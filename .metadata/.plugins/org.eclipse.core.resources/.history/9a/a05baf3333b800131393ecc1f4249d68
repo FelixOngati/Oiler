@@ -1,0 +1,11 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		FibonacciOiler object = new FibonacciOiler();
+		int result = object.fibonacciCalcultor(10);
+		System.out.printf("%d", result);
+
+	}
+
+}
